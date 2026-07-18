@@ -28,7 +28,7 @@ export default function ProblemSolution() {
         <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-2">
           {/* Problem card */}
           <Reveal>
-            <div className="h-full rounded-2xl border border-red-200/60 bg-red-50/60 p-7 dark:border-red-500/15 dark:bg-red-500/5">
+            <div className="h-full rounded-2xl border border-red-200/60 bg-red-50/60 p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-red-900/5 dark:border-red-500/15 dark:bg-red-500/5 dark:hover:shadow-black/30">
               <span className="inline-flex items-center gap-1.5 rounded-full bg-red-100 px-3 py-1 text-xs font-semibold text-red-600 dark:bg-red-500/10 dark:text-red-400">
                 <AlertTriangle size={13} /> The Problem
               </span>
@@ -57,7 +57,7 @@ export default function ProblemSolution() {
 
           {/* Solution card */}
           <Reveal delay={120}>
-            <div className="h-full rounded-2xl border border-emerald-accent/20 bg-mint-50 p-7 dark:border-emerald-accent/15 dark:bg-emerald-accent/5">
+            <div className="h-full rounded-2xl border border-emerald-accent/20 bg-mint-50 p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-emerald-900/5 dark:border-emerald-accent/15 dark:bg-emerald-accent/5 dark:hover:shadow-black/30">
               <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-accent/15 px-3 py-1 text-xs font-semibold text-emerald-accent-dark">
                 <Sparkles size={13} /> AIGRA's Way
               </span>
