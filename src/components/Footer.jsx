@@ -1,5 +1,6 @@
-import { Sprout, AtSign, Mail, Phone } from "lucide-react";
+import { AtSign, Mail, Phone } from "lucide-react";
 import { footerColumns } from "../data/footerLinks";
+import aigraLogo from "../assets/aigra_putih.svg";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -19,10 +20,11 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 text-white">
-              <span className="grid h-8 w-8 place-items-center rounded-lg bg-emerald-accent/15 text-emerald-accent-dark">
-                <Sprout size={16} strokeWidth={2.5} />
-              </span>
-              <span className="text-lg font-bold">AIGRA</span>
+              <img
+                src={aigraLogo}
+                alt="AIGRA Logo"
+                className="h-8 lg:h-10 w-auto"
+              />
             </div>
             <p className="mt-4 max-w-xs text-sm leading-relaxed">
               AIGRA is an AI-powered agriculture platform that helps farmers

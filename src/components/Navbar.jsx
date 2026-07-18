@@ -38,7 +38,11 @@ export default function Navbar() {
           onClick={(e) => handleNavClick(e, "#top")}
           className="flex items-center gap-2 text-white"
         >
-          <img src={aigraLogo} alt="AIGRA Logo" className="h-10 w-auto" />
+          <img
+            src={aigraLogo}
+            alt="AIGRA Logo"
+            className="h-8 lg:h-10 w-auto"
+          />
         </a>
 
         {/* Desktop links */}
