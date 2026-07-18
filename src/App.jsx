@@ -3,6 +3,9 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import TrustBar from "./components/TrustBar";
 import ProblemSolution from "./components/ProblemSolution";
+import Features from "./components/Features";
+import AboutContact from "./components/AboutContact";
+import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 
 export default function App() {
@@ -14,6 +17,9 @@ export default function App() {
           <Hero />
           <TrustBar />
           <ProblemSolution />
+          <Features />
+          <AboutContact />
+          <FAQ />
         </main>
         <Footer />
       </div>
