@@ -1,15 +1,22 @@
-function App() {
+import { ThemeProvider } from "./context/ThemeContext";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import TrustBar from "./components/TrustBar";
+import ProblemSolution from "./components/ProblemSolution";
+import Footer from "./components/Footer";
+
+export default function App() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-green-50">
-      <h1 className="text-4xl font-bold text-green-600 underline">
-        Inisiasi Project Smart Farming Landing Page
-      </h1>
-      <p className="mt-4 text-gray-600">
-        This is a simple landing page for the Smart Farming project, built with
-        React and Tailwind CSS.
-      </p>
-    </div>
+    <ThemeProvider>
+      <div className="min-h-screen bg-white text-ink-900 dark:bg-navy-950 dark:text-white">
+        <Navbar />
+        <main>
+          <Hero />
+          <TrustBar />
+          <ProblemSolution />
+        </main>
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
-
-export default App;
