@@ -1,1 +1,67 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans:
+    "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* AIGRA brand palette */
+  --color-navy-950: #060b14;
+  --color-navy-900: #0a1220;
+  --color-navy-800: #0f1a2c;
+  --color-navy-700: #16233a;
+  --color-navy-600: #223350;
+
+  --color-mint-50: #f2fbf6;
+  --color-mint-100: #e3f7ec;
+
+  --color-emerald-accent: #22c55e;
+  --color-emerald-accent-dark: #34d399;
+
+  --color-ink-900: #0b1220;
+  --color-ink-600: #4b5a6a;
+  --color-ink-400: #8695a7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Utility: fade-in-up reveal used by useScrollReveal hook */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Custom scrollbar accent for a bit of polish */
+::selection {
+  background-color: var(--color-emerald-accent);
+  color: white;
+}
