@@ -26,8 +26,8 @@ export default function Footer() {
             </div>
             <p className="mt-4 max-w-xs text-sm leading-relaxed">
               AIGRA is an AI-powered agriculture platform that helps farmers
-              monitor, predict, and automate cultivation environments in real
-              time for smarter and more stable harvests.
+              monitor, analyze, and automate cultivation environments in real
+              time for smarter and more stable farming operations.
             </p>
             <div className="mt-5 flex gap-3">
               <IconLink
